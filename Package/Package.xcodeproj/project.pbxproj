@@ -27,6 +27,8 @@
 		F2CA13C51B4B01F700A828D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F2CA13CC1B4B022A00A828D0 /* Package.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Package.cpp; sourceTree = "<group>"; };
 		F2CA13CD1B4B022A00A828D0 /* Package.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Package.h; sourceTree = "<group>"; };
+		F2CA13CE1B4B10BC00A828D0 /* TwoDayPackage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoDayPackage.cpp; sourceTree = "<group>"; };
+		F2CA13CF1B4B111900A828D0 /* TwoDayPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoDayPackage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 				F2CA13C51B4B01F700A828D0 /* main.cpp */,
 				F2CA13CC1B4B022A00A828D0 /* Package.cpp */,
 				F2CA13CD1B4B022A00A828D0 /* Package.h */,
+				F2CA13CE1B4B10BC00A828D0 /* TwoDayPackage.cpp */,
+				F2CA13CF1B4B111900A828D0 /* TwoDayPackage.h */,
 			);
 			path = Package;
 			sourceTree = "<group>";

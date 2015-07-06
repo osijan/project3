@@ -11,9 +11,9 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Package package1("sender","sAddress","recip","rAddress", 5.0, 10.0);
+    Package package1("sender","sAddress","recip","rAddress", 10, 5);
     
     package1.print();
-    package1.calculate();
+   
     return 0;
 }

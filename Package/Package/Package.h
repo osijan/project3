@@ -21,7 +21,7 @@ class Package{
     
 public:
     
-    Package(const string &, const string &, const string &, const string &, double, double);
+    Package(const string &, const string &, const string &, const string &, double=0, double=0);
     
     
     
@@ -49,7 +49,7 @@ public:
     
     
     
-    void setWeight(const double);
+    void setWeight(double);
     
     double getWeight()const;
     
@@ -61,9 +61,9 @@ public:
     
     
     
-    void calculate();
+    virtual double calculate() const;
     
-    void print() const;
+    virtual void print() const;
     
 private:
     

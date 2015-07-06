@@ -11,8 +11,15 @@
 #include "Package.h"
 
 Package::Package(string const &senderName, string const &senderAddress, string const &recipientName, string const &recipientAddress, double w, double cpo)
-:sName(senderName), sAddress(senderAddress), rName(recipientName), rAddress(recipientAddress), weight(w), costPerOunce(cpo)
+
 {
+    sName = senderName;
+    sAddress = senderAddress;
+    rName = recipientName;
+    rAddress = recipientAddress;
+    setWeight(w);
+    setCPO(cpo);
+   
     
 }
 
@@ -56,19 +63,36 @@ string Package::getRecipientAddress() const
     return rAddress;
 }
 
-void Package::setWeight(const double w)
+void Package::setWeight(double w)
 {
-    weight = w;
+    if (w > 0.0)
+    {
+        weight = w;
+        
+    }
+    
+    else
+    {
+        cout << " Weight set to " << w << endl;
+        throw invalid_argument("Weight needs to be positive");
+    }
 }
+
 
 double Package:: getWeight() const
 {
     return weight;
+
 }
+    
 
 void Package:: setCPO(const double cpo)
 {
-    costPerOunce = cpo;
+    if (cpo > 0.0)
+        costPerOunce = cpo;
+    else  throw invalid_argument("Weight needs to be positive");
+
+    
 }
 
 double Package::getCPO() const
@@ -76,16 +100,16 @@ double Package::getCPO() const
     return costPerOunce;
 }
 
-void Package::calculate()
+double Package::calculate() const
 {
-    cout << getWeight() * getCPO();
+    return getWeight() * getCPO();
     
 }
 
 void Package::print() const
 {
     cout << getSenderName() << endl << getSenderAddress() << endl << getRecipientName() << endl << getRecipientAddress()<< endl
-    << getWeight() << endl << getCPO() <<endl;
+    << getWeight() << endl << getCPO() <<endl << calculate();
 }
 
 
