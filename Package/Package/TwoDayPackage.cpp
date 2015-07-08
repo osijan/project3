@@ -6,7 +6,42 @@
 //  Copyright (c) 2015 Obren. All rights reserved.
 //
 
+
 #include <string>
-#include "Package.h"
+
+#include "TwoDayPackage.h"
+
+
+using namespace std;
+
+
+TwoDayPackage::TwoDayPackage(string const &senderName, string const &senderAddress, string const &recipientName, string const &recipientAddress, double w, double cpo, double ff)
+: Package(senderName, senderAddress, recipientName, recipientAddress, w, cpo)
+{
+    setFlatFee(ff);
+}
+
+void TwoDayPackage::setFlatFee(double ff)
+{
+    flatFee = ff;
+}
+
+double TwoDayPackage:: getFlatFee() const
+{
+    return flatFee;
+}
+
+double TwoDayPackage:: calculate() const
+{
+    return getFlatFee() + (getWeight() * getCPO());
+}
+
+void TwoDayPackage::print() const
+{
+    cout << getSenderName() << endl << getSenderAddress() << endl << getRecipientName() << endl << getRecipientAddress()<< endl
+    << getWeight() << endl << getCPO() <<endl << endl<< getFlatFee()<< calculate();
+}
+
+
 
 

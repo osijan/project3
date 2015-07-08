@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D6547E47-44CB-4967-B04A-CF0F79DF9398</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Package</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3523E870B7904B32E47D831DB81413EBB6787AD7</key>
 		<string>https://github.com/osijan/project3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Package/Package.xcodeproj/project.xcworkspace</string>
+	<string>Package/Package.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3523E870B7904B32E47D831DB81413EBB6787AD7</key>

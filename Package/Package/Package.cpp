@@ -109,7 +109,7 @@ double Package::calculate() const
 void Package::print() const
 {
     cout << getSenderName() << endl << getSenderAddress() << endl << getRecipientName() << endl << getRecipientAddress()<< endl
-    << getWeight() << endl << getCPO() <<endl << calculate();
+    << getWeight() << endl << getCPO() <<endl <<calculate();
 }
 
 

@@ -50,19 +50,16 @@ public:
     
     
     void setWeight(double);
-    
     double getWeight()const;
     
     
     
     void setCPO(const double);
-    
     double getCPO()const;
     
     
     
     virtual double calculate() const;
-    
     virtual void print() const;
     
 private:
