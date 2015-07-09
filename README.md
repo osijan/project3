@@ -1,7 +1,7 @@
 # project3
 
 Project 3 for CS222 (Intermediate C++) at UW-WW
-Read from a file that contains package data, calculate ocst for diffrent types of packages and print report. 
+Read from a file that contains package data, calculate cost for diffrent types of packages and print report. 
 
 
 Project 3: Inheritance & Polymorphism
