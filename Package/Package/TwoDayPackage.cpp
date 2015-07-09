@@ -8,6 +8,7 @@
 
 
 #include <string>
+#include <iostream>
 
 #include "TwoDayPackage.h"
 
@@ -38,8 +39,7 @@ double TwoDayPackage:: calculate() const
 
 void TwoDayPackage::print() const
 {
-    cout << getSenderName() << endl << getSenderAddress() << endl << getRecipientName() << endl << getRecipientAddress()<< endl
-    << getWeight() << endl << getCPO() <<endl << endl<< getFlatFee()<< calculate();
+    Package::print();
 }
 
 

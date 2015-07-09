@@ -22,9 +22,8 @@ public:
     TwoDayPackage(const string &, const string &, const string &, const string &, double=0, double=0, double=0);
     void setFlatFee(double);
     double getFlatFee() const;
-    void print();
     double calculate() const;
-    void print() const;
+    virtual void print() const;
     
 private:
     double flatFee;

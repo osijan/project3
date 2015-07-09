@@ -8,6 +8,7 @@
 
 
 #include <string>
+#include <iostream>
 #include "Package.h"
 
 Package::Package(string const &senderName, string const &senderAddress, string const &recipientName, string const &recipientAddress, double w, double cpo)
@@ -109,7 +110,7 @@ double Package::calculate() const
 void Package::print() const
 {
     cout << getSenderName() << endl << getSenderAddress() << endl << getRecipientName() << endl << getRecipientAddress()<< endl
-    << getWeight() << endl << getCPO() <<endl <<calculate();
+    << getWeight() << endl << getCPO() <<endl <<calculate() << endl;
 }
 
 
