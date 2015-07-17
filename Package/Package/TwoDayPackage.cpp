@@ -34,6 +34,7 @@ double TwoDayPackage:: getFlatFee() const
 
 double TwoDayPackage:: calculate() const
 {
+  //  cout<< getFlatFee() + (getWeight() * getCPO());
     return getFlatFee() + (getWeight() * getCPO());
 }
 

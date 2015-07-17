@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Obren. All rights reserved.
 //
 
-#ifndef __Package__OvernightPackage__
-#define __Package__OvernightPackage__
+#ifndef OvernightPackage_H
+#define OvernightPackage_H
 
 #include <stdio.h>
 #include <string>

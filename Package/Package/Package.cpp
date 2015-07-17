@@ -103,7 +103,8 @@ double Package::getCPO() const
 
 double Package::calculate() const
 {
-    return getWeight() * getCPO();
+ //   cout<< getWeight() * getCPO();
+    return  getWeight() * getCPO();
     
 }
 

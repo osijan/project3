@@ -27,6 +27,7 @@
 		F28856E51B4CC0B900F0E4A8 /* TwoDayPackage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoDayPackage.cpp; sourceTree = "<group>"; };
 		F28857DA1B4DEF9C00F0E4A8 /* OvernightPackage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OvernightPackage.cpp; sourceTree = "<group>"; };
 		F28857DB1B4DEF9C00F0E4A8 /* OvernightPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvernightPackage.h; sourceTree = "<group>"; };
+		F28857DD1B504AD300F0E4A8 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = info.txt; path = ../info.txt; sourceTree = "<group>"; };
 		F2CA13C21B4B01F700A828D0 /* Package */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Package; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CA13C51B4B01F700A828D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F2CA13CC1B4B022A00A828D0 /* Package.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Package.cpp; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 				F2CA13C51B4B01F700A828D0 /* main.cpp */,
 				F2CA13CC1B4B022A00A828D0 /* Package.cpp */,
 				F2CA13CD1B4B022A00A828D0 /* Package.h */,
+				F28857DD1B504AD300F0E4A8 /* info.txt */,
 				F28857DA1B4DEF9C00F0E4A8 /* OvernightPackage.cpp */,
 				F28857DB1B4DEF9C00F0E4A8 /* OvernightPackage.h */,
 				F28856E51B4CC0B900F0E4A8 /* TwoDayPackage.cpp */,
@@ -217,7 +219,9 @@
 		F2CA13CA1B4B01F700A828D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Debug;
@@ -225,7 +229,11 @@
 		F2CA13CB1B4B01F700A828D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = yes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Release;

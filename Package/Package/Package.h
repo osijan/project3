@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Obren. All rights reserved.
 //
 
-#ifndef __Package__Package__
-#define __Package__Package__
+#ifndef Package_H
+#define Package_H
 
 #include <string>
 

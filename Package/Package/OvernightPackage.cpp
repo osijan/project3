@@ -32,6 +32,7 @@ double OvernightPackage:: getFeePerOunce() const
 
 double OvernightPackage:: calculate() const
 {
+   // cout <<(getCPO() * getFeePerOunce()) + (getWeight() * getCPO());
     return (getCPO() * getFeePerOunce()) + (getWeight() * getCPO());
 }
 

@@ -7,8 +7,8 @@
 //
 
 
-#ifndef Package_TwoDayPackage_h
-#define Package_TwoDayPackage_h
+#ifndef TwoDayPackage_H
+#define TwoDayPackage_H
 
 #include <string>
 #include "Package.h"
